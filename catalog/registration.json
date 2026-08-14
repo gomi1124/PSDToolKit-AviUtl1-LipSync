@@ -1,63 +1,54 @@
-{
-  "locale": "ja",
-  "meta": {
+[
+  {
     "id": "gomi1124.psdtoolkit-aviutl1-lipsync",
-    "legacyId": "gomi1124.psdtoolkit-aviutl1-lipsync",
-    "packageType": "script",
-    "packageRole": "primaryPackage",
-    "addedAt": "2026-08-03",
-    "packagePageUrl": "https://github.com/gomi1124/PSDToolKit-Natural-LipSync",
-    "niconiCommonsId": "nc495271"
-  },
-  "content": {
-    "ja": {
-      "name": "PSDToolKit Natural LipSync",
-      "author": "ただのごみ",
-      "tags": [
-        "PSD",
-        "口パク",
-        "音声"
-      ],
-      "description": {
-        "summary": "音声の強弱に合わせて自然な口形状を生成",
-        "markdownSource": "https://raw.githubusercontent.com/gomi1124/PSDToolKit-Natural-LipSync/main/README.md"
-      },
-      "changelog": {
-        "markdownSource": "https://raw.githubusercontent.com/gomi1124/PSDToolKit-Natural-LipSync/main/CHANGELOG.md"
-      },
-      "licenses": [
-        {
-          "type": "MIT",
-          "copyrights": [
-            {
-              "years": "2026",
-              "holder": "gomi1124"
-            }
-          ]
-        }
-      ],
-      "images": {
+    "name": "PSDToolKit Natural LipSync",
+    "type": "スクリプト",
+    "summary": "音声の強弱に合わせて自然な口形状を生成",
+    "description": "https://raw.githubusercontent.com/gomi1124/PSDToolKit-Natural-LipSync/main/README.md",
+    "author": "ただのごみ",
+    "repoURL": "https://github.com/gomi1124/PSDToolKit-Natural-LipSync",
+    "latest-version": "v2.0.1",
+    "popularity": 0,
+    "trend": 0,
+    "licenses": [
+      {
+        "type": "MIT",
+        "isCustom": false,
+        "copyrights": [
+          {
+            "years": "2026",
+            "holder": "gomi1124"
+          }
+        ],
+        "licenseBody": null
+      }
+    ],
+    "niconiCommonsId": "nc495464",
+    "tags": [
+      "PSD",
+      "口パク",
+      "音声"
+    ],
+    "dependencies": [
+      "oov.PSDToolKit2"
+    ],
+    "images": [
+      {
         "thumbnail": "https://raw.githubusercontent.com/gomi1124/PSDToolKit-Natural-LipSync/main/catalog/images/thumbnail.png",
-        "detailImages": [
+        "infoImg": [
           "https://raw.githubusercontent.com/gomi1124/PSDToolKit-Natural-LipSync/main/catalog/images/detail.png"
         ]
       }
-    }
-  },
-  "install": {
-    "relations": {
-      "requires": [
-        "oov.PSDToolKit2"
-      ]
-    },
-    "installation": {
+    ],
+    "installer": {
       "source": {
-        "type": "githubRelease",
-        "owner": "gomi1124",
-        "repo": "PSDToolKit-Natural-LipSync",
-        "pattern": "^PSDToolKit_NaturalLipSync_v.*\\.au2pkg\\.zip$"
+        "github": {
+          "owner": "gomi1124",
+          "repo": "PSDToolKit-Natural-LipSync",
+          "pattern": "^PSDToolKit_NaturalLipSync_v.*\\.au2pkg\\.zip$"
+        }
       },
-      "installSteps": [
+      "install": [
         {
           "action": "download"
         },
@@ -85,7 +76,7 @@
           "to": "{scriptsDir}/PSDToolKit/AviUtl1LipSyncTools"
         }
       ],
-      "uninstallSteps": [
+      "uninstall": [
         {
           "action": "delete",
           "path": "{scriptsDir}/PSDToolKit/LipSyncAviUtl1.lua"
@@ -103,30 +94,28 @@
           "path": "{scriptsDir}/PSDToolKit/AviUtl1LipSyncTools"
         }
       ]
-    }
-  },
-  "versions": {
-    "versions": [
+    },
+    "version": [
       {
-        "version": "v2.0.1",
-        "releaseDate": "2026-08-14",
-        "files": [
+        "version": "v2.0.0",
+        "release_date": "2026-08-04",
+        "file": [
           {
             "path": "{scriptsDir}/PSDToolKit/LipSyncAviUtl1.mod2",
-            "xxh128": "7314ce50aaa686ad40446c0b8068cb39"
+            "XXH3_128": "bef86991e0a8759032dbe08a5fa5b2c6"
           }
         ]
       },
       {
-        "version": "v2.0.0",
-        "releaseDate": "2026-08-04",
-        "files": [
+        "version": "v2.0.1",
+        "release_date": "2026-08-14",
+        "file": [
           {
             "path": "{scriptsDir}/PSDToolKit/LipSyncAviUtl1.mod2",
-            "xxh128": "bef86991e0a8759032dbe08a5fa5b2c6"
+            "XXH3_128": "7314ce50aaa686ad40446c0b8068cb39"
           }
         ]
       }
     ]
   }
-}
+]
