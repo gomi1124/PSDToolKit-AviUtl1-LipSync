@@ -4,6 +4,8 @@
 
 カタログ側で移行中のsource bundle形式は、安定版アプリが正式対応するまで使用しません。登録時は必ず公式Latestのアプリを確認し、v0.3.3ではこのファイルをそのまま使用してください。
 
+`installer.source.direct: null`は、v0.3.3の新規登録で既定の直接URL設定を消し、GitHub Release設定を選択させるために必要です。JSON入力から削除しないでください。
+
 登録用JSONには次の画像のGitHub Raw URLを設定しています。
 
 - サムネイル: `images/thumbnail.png`（206x206）
