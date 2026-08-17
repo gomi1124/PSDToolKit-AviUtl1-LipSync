@@ -6,10 +6,12 @@
 
 `installer.source.direct: null`は、v0.3.3の新規登録で既定の直接URL設定を消し、GitHub Release設定を選択させるために必要です。JSON入力から削除しないでください。
 
-登録用JSONには次の画像のGitHub Raw URLを設定しています。
+画像は登録用JSONに外部URLを設定せず、カタログ画面から次のローカルファイルを添付してください。
 
 - サムネイル: `images/thumbnail.png`（206x206）
 - 説明画像: `images/detail.png`（1280x720）
+
+送信後のPRでは、カタログデータリポジトリの`image/`配下に画像が追加され、`index.json`から`./image/...`で参照されることを確認してください。
 
 インストーラーにはGitHub Releasesの`.au2pkg.zip`を指定しています。バージョン検出対象は`LipSyncAviUtl1.mod2`です。新しいバージョンを公開するときは、`latest-version`と末尾のバージョン要素にあるリリース日・バージョン・XXH3-128を更新してください。
 
