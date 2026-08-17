@@ -32,14 +32,6 @@
     "dependencies": [
       "oov.PSDToolKit2"
     ],
-    "images": [
-      {
-        "thumbnail": "https://raw.githubusercontent.com/gomi1124/PSDToolKit-Natural-LipSync/main/catalog/images/thumbnail.png",
-        "infoImg": [
-          "https://raw.githubusercontent.com/gomi1124/PSDToolKit-Natural-LipSync/main/catalog/images/detail.png"
-        ]
-      }
-    ],
     "installer": {
       "source": {
         "direct": null,
